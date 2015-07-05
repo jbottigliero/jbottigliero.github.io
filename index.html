@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
   	<div class="container">
 
@@ -37,9 +38,36 @@
   		</div>
 
   		<div class="col-md-8">
+	  		
+  			<section>
+				<h1>experiments</h1>
+				<small>
+					<i>Stay tuned...</i>
+				</small>  				
+  			</section>
+
 	  		<section>
-	  			<article></article>
+	  			<h1>libraries + extensions</h1>
+	  			<article>
+	  				<h2>backbone-hammerjs-view</h2>
+	  				<p>A basic Backbone.View extension that enables HammerJS events on a view's element.</p>
+
+<pre>
+var TapableView = Backbone.HammerJSView.extend({
+	events : {
+		'tap' : 'handleTap'
+	},
+
+	handleTap: function(e) {
+		//...
+	}
+});</pre>
+
+	  				<i class="fa fa-github"></i> 
+	  				<a href="https://github.com/jbottigliero/backbone-hammerjs-view">View on Github</a>
+	  			</article>
 	  		</section>
+
 	  	</div>
   </body>
 </html>
